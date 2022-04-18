@@ -1,0 +1,117 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+*,*:before,*:after{box-sizing: border-box;}
+html,button{font: 15px 'Lexend Deca', sans-serif;}
+body,h1,h2,p,section{margin: 0;}
+body{
+  background-color: hsl(0, 0%, 95%);
+  margin: 0 auto;
+}
+
+:root{
+  --ff-bold: 'Big Shoulders Display', cursive;
+  --fw-bold: 700;
+}
+/* my styles */
+.cars{
+  padding: 6em 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.car_card{
+  padding: 3em 3.1em;
+}
+
+.car-img{
+  margin-bottom: 1.5em;
+}
+
+.car-type{
+  font-family: var(--ff-bold);
+  font-weight: var(--fw-bold);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 0.75em;
+}
+
+.car-description{
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+
+.car_card.sedan{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.car_card.sedan button{
+  color: hsl(31, 77%, 52%);
+}
+
+.car_card.suv{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.car_card.suv button{
+  color: hsl(184, 100%, 22%);
+}
+
+.car_card.luxury{
+  background-color: hsl(179, 100%, 13%);
+}
+
+.car_card.luxury button{
+  color: hsl(179, 100%, 13%);
+}
+
+.car_card button{
+  background-color: hsl(0, 0%, 95%);
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+  border-radius: 500px;
+  padding: 0.6em 2em;
+  font-size: 1rem;
+}
+
+.cars .car_card:first-of-type{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cars .car_card:last-of-type{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 800px){
+  .cars{
+    flex-direction: row;
+    margin: 9em auto;
+    max-width: 63em;
+  }
+
+  .car-description{
+    margin-bottom: 5.5em;
+  }
+
+  .car_card button{
+    padding: 0.9em 2.1em;
+  }
+
+  .cars .car_card:first-of-type{
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .cars .car_card:last-of-type{
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
